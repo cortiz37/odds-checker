@@ -1,0 +1,34 @@
+{
+  "liveEvents": [
+    {
+      "event": {
+        "id": 1006937333,
+        "name": "Real Madrid - Barcelona FC",
+        "tags": [
+          "MATCH",
+          "OPEN_FOR_LIVE"
+        ]
+      },
+      "mainBetOffer": {
+        "id": 2233351359,
+        "outcomes": [
+          {
+            "id": 2818435773,
+            "label": "Real Madrid",
+            "odds": 5250
+          },
+          {
+            "id": 2818435774,
+            "label": "Draw",
+            "odds": 3100
+          },
+          {
+            "id": 2818435775,
+            "label": "Barcelona FC",
+            "odds": 1740
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.5'
+    id 'java'
+}
+
+group = 'odds-checker'
+
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+bootJar {
+    archiveFileName = "${archiveBaseName.get()}.${archiveExtension.get()}"
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter:2.5.4")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:2.12.5")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.12.5")
+    
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.4'
+    testImplementation 'org.mockito:mockito-core:3.7.7'
+    testImplementation 'org.mockito:mockito-inline:3.7.7'
+    
+    compileOnly("org.projectlombok:lombok:1.18.20")
+    annotationProcessor("org.projectlombok:lombok:1.18.20")
+}
